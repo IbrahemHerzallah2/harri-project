@@ -1,0 +1,7 @@
+.applicants-cards-container {
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(190px, .5fr));
+}
+.applicants-page-main-container {
+  background-color: var(--body-bg);
+}

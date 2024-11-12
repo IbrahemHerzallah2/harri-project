@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.light {
+  --light: #FFFFFF;
+  --body: #212529;
+  --primary: #0088DD;
+  --light-gray: #F2F2F2;
+  --body-bg: #F7FBFF;
+  --color: #000000;
+  --shadow : rgba(0, 0, 0, .2);
+  color: var(--color);
+}
+
+.dark {
+  --light: #212529;
+  --body: #FFFFFF;
+  --primary: #0088DD;
+  --light-gray: #343434;
+  --body-bg: #2D3034;
+  --color: #FFFFFF;
+  --shadow : rgba(216, 216, 216, 0.2);
+  color: var(--color);
+}

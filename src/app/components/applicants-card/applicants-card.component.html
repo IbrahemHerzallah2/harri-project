@@ -1,0 +1,17 @@
+<div class="applicant-card-component rounded-2 mt-4">
+  <img class="applicant-photo" [src]="img" [alt]="name">
+  <div class="p-3">
+    <div class="py-2 applicant-card-name-and-job-div">
+      <h5 class="m-0 fs-6 fw-semibold applicant-card-applicant-name">{{name}}</h5>
+      <h5 class="m-0 fs-6 fw-semibold">{{job}}</h5>
+    </div>
+    <div class="applicant-details">
+      <div class="py-2 applicant-card-email-and-phone-div">
+        <p class="m-0"><img class="applicants-page-icons me-1" src="assets/mail-outline.svg"> {{email}}</p>
+        <p class="m-0"><img class="applicants-page-icons me-1" src="assets/call-outline.svg"> {{phone}}</p>
+      </div>
+      <p class="m-0 py-2">Applied on: {{date}}</p>
+    </div>
+  </div>
+</div>
+

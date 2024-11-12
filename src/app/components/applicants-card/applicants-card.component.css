@@ -1,0 +1,28 @@
+.applicant-photo {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+.applicant-card-component {
+  box-shadow: 0 0 5px -1px rgba(0, 0, 0, .2);
+  background-color: var(--light);
+  max-width: 210px;
+  overflow: hidden;
+}
+.applicants-page-icons {
+  width: 16px;
+  height: 16px;
+  color: red;
+}
+.applicant-card-email-and-phone-div {
+  border-bottom: 1px solid var(--light-gray);
+}
+.applicant-details {
+  font-size: 0.8rem;
+}
+.applicant-card-name-and-job-div {
+  border-bottom: 1px solid var(--light-gray);
+}
+.applicant-card-applicant-name {
+  color: var(--primary);
+}

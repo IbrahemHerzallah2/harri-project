@@ -1,0 +1,19 @@
+.app-header {
+  background-color: var(--light);
+  box-shadow: 0 0 5px -1px var(--shadow);
+}
+.app-header-slider {
+  background-color: var(--light-gray);
+}
+.app-header-harri-logo {
+  width: 5rem;
+  height: 2rem;
+}
+.header-profile-img {
+  width: 35px;
+  height: 35px;
+}
+.selector-btn-app-header {
+  color: var(--body);
+  background-color: var(--light);
+}

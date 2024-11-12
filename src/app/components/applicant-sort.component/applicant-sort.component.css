@@ -1,0 +1,27 @@
+.sort-applicants-component {
+  width: 25rem;
+}
+.sort-applicants-component select {
+  cursor: pointer;
+  -webkit-appearance: none;
+  background-color: var(--light);
+  color: var(--body);
+  border: none;
+  outline: none;
+}
+@media screen and (max-width: 930px) {
+  .sort-applicants-component {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sort-applicants-component {
+    width: 15rem;
+  }
+}
+.sort-label-applicants-component {
+  z-index: 3;
+  font-size: 0.6rem;
+  background-color: var(--light);
+  top: -7px;
+}

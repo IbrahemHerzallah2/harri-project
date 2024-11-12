@@ -1,0 +1,24 @@
+.search-for-applicants-component {
+  width: 25rem;
+}
+@media screen and (max-width: 930px) {
+  .search-for-applicants-component {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .search-for-applicants-component {
+    width: 15rem;
+  }
+}
+.search-for-applicants-input {
+  background-color: var(--light);
+  color: var(--body);
+  outline: none;
+}
+.search-for-applicants-input::placeholder{
+  color: var(--body);
+}
+.search-icon-search-applicants-component {
+  color: var(--body);
+}

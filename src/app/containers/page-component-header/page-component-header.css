@@ -1,0 +1,9 @@
+.name-page-header {
+  border-bottom: 1px solid var(--light-gray);
+}
+.category-name-page-header {
+  color: var(--primary);
+}
+.page-component-header {
+  background-color: var(--light);
+}
