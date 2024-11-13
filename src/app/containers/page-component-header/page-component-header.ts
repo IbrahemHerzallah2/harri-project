@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {ApplicantsSearchComponent} from '../../components/applicants-search/applicants-search';
 import {ApplicantSortComponent} from '../../components/applicant-sort.component/applicant-sort.component';
 
@@ -15,4 +15,12 @@ import {ApplicantSortComponent} from '../../components/applicant-sort.component/
 export class PageComponentHeader {
   @Input() pageName: string = 'Recruiter Hub';
   @Input() pageCategory: string = 'My Applicants';
+  @Output() inputValueChange = new EventEmitter();
+  @Output() selectedValueChange = new EventEmitter();
+  onSearchEvent(event: string){
+    this.inputValueChange.emit(event);
+  }
+  onSortEvent(event: string){
+    this.selectedValueChange.emit(event);
+  }
 }

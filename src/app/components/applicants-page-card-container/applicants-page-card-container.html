@@ -1,8 +1,8 @@
 <main class="applicants-page-main-container pb-5">
   <div class="px-5 d-grid justify-content-center applicants-cards-container pt-2">
-    <applicants-card *ngFor="let applicant of applicants"
+    <applicants-card *ngFor="let applicant of filteredApplicants"
                      [img]="applicant.img" [name]="applicant.name" [job]="applicant.job"
-                     [email]="applicant.email" [phone]="applicant.phone" [date]="applicant.date">
+                     [email]="applicant.email" [phone]="applicant.phone" [date]="applicant.date" [id]="applicant.id">
     </applicants-card>
   </div>
 </main>

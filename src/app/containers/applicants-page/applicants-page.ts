@@ -15,5 +15,12 @@ import {PageComponentHeader} from '../page-component-header/page-component-heade
   ]
 })
 export class ApplicantsPageComponent {
-
+  searchValue:string = '';
+  sortValue:string = '';
+  onSearchValueChange(value: string) {
+      this.searchValue = value;
+  }
+  onSortChange(value: string) {
+    this.sortValue = value;
+  }
 }

@@ -1,6 +1,7 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, Output,EventEmitter} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+// import  from 'node:events';
 
 @Component({
   standalone: true,
@@ -14,5 +15,9 @@ import { IonicModule } from '@ionic/angular';
 })
 export class ApplicantsSearchComponent {
   @Input() icon : boolean = true;
-  inputValue : string = '';
+  @Output() inputValueChange = new EventEmitter<string>();
+  inputValue: string = '';
+  handleChangeInput() {
+    this.inputValueChange.emit(this.inputValue);
+  }
 }

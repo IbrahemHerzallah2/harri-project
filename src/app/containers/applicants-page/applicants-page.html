@@ -1,2 +1,2 @@
-<page-component-header></page-component-header>
-<applicants-page-card-container></applicants-page-card-container>
+<page-component-header (inputValueChange)="onSearchValueChange($event)" (selectedValueChange)="onSortChange($event)"></page-component-header>
+<applicants-page-card-container [searchValue]="searchValue" [sortValue]="sortValue"></applicants-page-card-container>
